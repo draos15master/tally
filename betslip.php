@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<?php 
-session_start();
+<?php
+    require_once 'header.php';
 ?>
 <html lang="en">
 <head>
@@ -12,16 +12,16 @@ session_start();
 <body>
     <div id="logo">
         <div class="logo_img">
-            <a href="main.html">
+            <a href="main.php">
                 <img src="https://shop-phinf.pstatic.net/20230329_245/1680077568628LMcpa_PNG/%C0%D5%C3%F7%C5%C5%B8%AE_%B7%CE%B0%ED_%C4%B5%B9%F6%BD%BA_%C5%A9%B1%E23.png?type=w640" alt="">
             </a>
         </div>
     </div>
     <div id="header">
         <nav class="header_nav">
-            <a href="prematch.html" class="header_nav_pre">스포츠</a>
-            <a href="betslip.html" class="header_nav_betslip">배팅내역</a>
-            <a href="profile.html"class="header_nav_profile">프로필</a>
+            <a href="prematch.php" class="header_nav_pre">스포츠</a>
+            <a href="betslip.php" class="header_nav_betslip">배팅내역</a>
+            <a href="profile.php"class="header_nav_profile">프로필</a>
         </nav>
     </div>
     <div id="body">

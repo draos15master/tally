@@ -15,7 +15,7 @@ try {
     $stmt->bindParam(':userid', $userid);
     $stmt->bindParam(':password', $hashedPassword); // 비밀번호 암호화를 사용할 경우
     $stmt->execute();
-    header("Location: index.html");
+    header("Location: index.php");
     exit; // 리디렉션 후 스크립트를 중단
 } catch(PDOException $e) {
     echo "오류: " . $e->getMessage();
