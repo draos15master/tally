@@ -24,6 +24,9 @@
 
                 <label for="confirm_password" class="label">Confirm_password : </label>
                 <input type="password" id="confirm_password" name="confirm_password" required>
+
+                <label for="nickname" class="label">닉네임 : </label>
+                <input type="text" id="nickname" name="nickname" required>
             </div>
             <div class="form_bottom">
                 <input type="submit" value="완료" class="submit">

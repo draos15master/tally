@@ -2,7 +2,7 @@
 session_start();
 
 // 세션 타임아웃을 다시 설정
-if (isset($_SESSION['timeout']) && time() - $_SESSION['timeout'] > 20) {
+if (isset($_SESSION['timeout']) && time() - $_SESSION['timeout'] > 1800) {
     session_unset();
     session_destroy();
     session_start();
