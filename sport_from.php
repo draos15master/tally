@@ -40,7 +40,7 @@
         <a href="prematch.php" class="header_nav_pre">스포츠</a>
         <a href="betslip.php" class="header_nav_betslip">배팅내역</a>
         <a href="profile.php" class="header_nav_profile">프로필</a>
-        <a href="sport_from.php" calss="header_nav_sport">경기등록</a>
+        <a href="sport_from.php" calss="header_nav_sport">설정</a>
     </nav>
 </div>
     <form method="POST" action="sport_process.php">
@@ -105,5 +105,22 @@
     <input type="text" name="uo_away_odds" id="uo_away_odds">
     <input type="submit" value="등록">
 </form>
+    <h2>결과처리</h2>
+    <form method="POST" action="score_process.php">
+        <label for="match_id">경기 ID: </label>
+        <input type="text" id="match_id" name="match_id" placeholder="경기 ID">
+        <label for="home_team_score">홈 스코어: </label>
+        <input type="text" id="home_team_score" name="home_team_score" placeholder="홈">
+        <label for="away_team_score">원정 스코어: </label>
+        <input type="text" id="away_team_score" name="away_team_score" placeholder="원정">
+        <label for="status">경기 상태: </label>
+        <select name="status" id="status">
+            <option value="경기전">경기전</option>
+            <option value="경기중">경기중</option>
+            <option value="경기종료">경기종료</option>
+            <option value="적중특례">적중특례</option>
+        </select>
+        <input type="submit" value="확인">
+    </form>
 </body>
 </html>
