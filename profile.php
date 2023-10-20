@@ -2,7 +2,7 @@
 <?php
     require_once 'header.php';
 ?>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +25,24 @@
         </nav>
     </div>
     <div id="body">
+        <div class="form">
+            <h1>프로필</h1>
+            <form method="POST" action="profile_process.php" class="form_section">
+                <div class="form_top">
+                    <label for="nickname">닉네임: <?php echo $_SESSION['nickname']; ?></label>
+                    <label for="price">보유머니: <?php echo $_SESSION['price']; ?></label>
+
+                    <label for="new_password">새로운 비밀번호: </label>
+                    <input type="password" id="new_password" name="new_password">
+
+                    <label for="confirm_password">비밀번호 확인: </label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
+                <div class="form_bottom">
+                    <input type="submit" value="저장" class="submit">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
