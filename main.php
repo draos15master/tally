@@ -23,6 +23,7 @@
         <a href="prematch.php" class="header_nav_pre">스포츠</a>
         <a href="betslip.php" class="header_nav_betslip">배팅내역</a>
         <a href="profile.php" class="header_nav_profile">프로필</a>
+        <a href="sport_from.php" calss="header_nav_sport">경기등록</a>
     </nav>
 </div>
 <div id="body">
